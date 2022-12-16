@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "1858b830-e4be-4a46-98c3-44a643a5c3eb",
+		"name": "Notifications Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23145030"
+	},
+	"item": [
+		{
+			"name": "Create Notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"recipientId\": \"ce4fc91d-829e-44ab-9a83-bf681837901c\",\r\n    \"content\": \"Nova notificação de teste\",\r\n    \"category\": \"teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}notifications",
+					"host": [
+						"{{host}}notifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count from recipient",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"recipientId\": \"ce4fc91d-829e-44ab-9a83-bf681837901c\",\r\n    \"content\": \"Nova notificação de teste\",\r\n    \"category\": \"teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}notifications/count/from/ce4fc91d-829e-44ab-9a83-bf681837901c",
+					"host": [
+						"{{host}}notifications"
+					],
+					"path": [
+						"count",
+						"from",
+						"ce4fc91d-829e-44ab-9a83-bf681837901c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count from recipient",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"recipientId\": \"ce4fc91d-829e-44ab-9a83-bf681837901c\",\r\n    \"content\": \"Nova notificação de teste\",\r\n    \"category\": \"teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}notifications/from/ce4fc91d-829e-44ab-9a83-bf681837901c",
+					"host": [
+						"{{host}}notifications"
+					],
+					"path": [
+						"from",
+						"ce4fc91d-829e-44ab-9a83-bf681837901c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel Notification",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{host}}notifications/d2d1835b-6e95-4388-bab7-4302d4ac7966/cancel",
+					"host": [
+						"{{host}}notifications"
+					],
+					"path": [
+						"d2d1835b-6e95-4388-bab7-4302d4ac7966",
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Notification",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{host}}notifications/d2d1835b-6e95-4388-bab7-4302d4ac7966/read",
+					"host": [
+						"{{host}}notifications"
+					],
+					"path": [
+						"d2d1835b-6e95-4388-bab7-4302d4ac7966",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unread Notification",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{host}}notifications/d2d1835b-6e95-4388-bab7-4302d4ac7966/unread",
+					"host": [
+						"{{host}}notifications"
+					],
+					"path": [
+						"d2d1835b-6e95-4388-bab7-4302d4ac7966",
+						"unread"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
