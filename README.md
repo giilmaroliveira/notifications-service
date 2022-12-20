@@ -5,6 +5,7 @@ This project was developed with the following technologies
 - [NestJS](https://nestjs.com/)
 - [Prisma](https://www.prisma.io/)
 - [Jest](https://jestjs.io/)
+- [Kafka](https://kafka.js.org/)
 
 ## Prerequisites
 
