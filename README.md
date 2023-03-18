@@ -7,7 +7,7 @@ This project was developed with the following technologies
 - [Jest](https://jestjs.io/)
 - [Kafka](https://kafka.js.org/)
 
-## Prerequisites
+## Pre-requisites
 
 Before you begin, ensure you have met the following requirements:
 * You have installed the latest version of [NodeJS](https://nodejs.org/en/) or at lest `16.16.0` version
